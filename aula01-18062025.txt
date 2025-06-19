@@ -1,1 +1,58 @@
 utilizando o Github pela primeira vez...
+
+🔄 1. Atualizar a lista de pacotes disponíveis
+bash
+Copiar
+Editar
+sudo apt update
+⚙️ Verifica nos servidores se existem atualizações disponíveis para os pacotes que você já tem instalados.
+
+⬆️ 2. Atualizar os pacotes instalados
+bash
+Copiar
+Editar
+sudo apt upgrade
+📦 Instala as atualizações normais disponíveis. Não remove nem instala dependências novas.
+
+🔁 3. Atualização completa (mais agressiva)
+bash
+Copiar
+Editar
+sudo apt full-upgrade
+ou
+
+bash
+Copiar
+Editar
+sudo apt dist-upgrade
+📌 Esses dois fazem o mesmo: além de atualizar os pacotes, resolvem dependências, instalam ou removem pacotes se necessário.
+⚠️ Use com mais atenção, pois pode desinstalar algo.
+
+🧹 4. Remover pacotes que não são mais usados
+bash
+Copiar
+Editar
+sudo apt autoremove
+🚮 Remove pacotes que foram instalados automaticamente e não são mais necessários.
+
+🧽 5. Limpar arquivos de pacotes já instalados
+bash
+Copiar
+Editar
+sudo apt autoclean
+🧼 Remove arquivos .deb de versões antigas que não servem mais.
+
+bash
+Copiar
+Editar
+sudo apt clean
+💣 Limpa todos os arquivos de cache de pacotes, liberando mais espaço.
+
+✅ Sequência recomendada para manter o sistema limpo e atualizado:
+bash
+Copiar
+Editar
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
+sudo apt clean
